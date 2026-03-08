@@ -21,7 +21,16 @@ Read these files to understand what's relevant:
 - `@context/work.md` — business focus, key frameworks, target audience
 - `@context/current-priorities.md` — what Kurt is working on right now
 
-### 2. Formulate Queries
+### 2. Review Previous Reports
+
+Read all existing files in `research/` (most recent first). Note what topics, stories, videos, Reddit threads, and competitive findings have already been reported. **Do not repeat these in the new report.** Only include:
+- Genuinely new developments since the last report
+- Significant updates to previously reported stories (e.g., a bill that was proposed last time has now passed)
+- New content creators, videos, or discussions not previously covered
+
+If nothing meaningfully new has emerged in a category, say so briefly (e.g., "No new policy changes since last report") rather than restating old information.
+
+### 3. Formulate Queries
 
 Build search queries targeting these angles:
 - **Policy & legislative:** Social Security rule changes, COLA updates, earnings limits, FRA changes
@@ -29,7 +38,7 @@ Build search queries targeting these angles:
 - **Content & media:** YouTube creators covering SS topics, trending Reddit threads (r/SocialSecurity, r/retirement, r/financialplanning, r/personalfinance)
 - **Demographic:** content targeting the 55+ educated professional audience (Kurt's "Strategic 15%")
 
-### 3. Run Research
+### 4. Run Research
 
 Call the OpenRouter API using the key from `.env`:
 
@@ -60,7 +69,7 @@ Run multiple queries to cover different angles. Suggested searches:
 3. Reddit discussions on Social Security timing and delayed filing (r/SocialSecurity, r/retirement)
 4. Any new calculators, tools, or competitors in the SS optimization space
 
-### 4. Synthesize & Filter
+### 5. Synthesize & Filter
 
 Filter results through Kurt's lens:
 - **Relevant:** Anything about the 62-70 filing window, delayed benefits, spousal strategy, COLA, policy changes, misinformation correction
@@ -68,7 +77,7 @@ Filter results through Kurt's lens:
 - **Competitive:** Other SS calculators, coaches, or content creators in this space
 - **Content opportunity:** Topics trending that Kurt could create content around
 
-### 5. Save Report
+### 6. Save Report
 
 Save the full report to `research/` with this naming convention:
 ```
@@ -99,7 +108,7 @@ Report format:
 - [All URLs referenced]
 ```
 
-### 6. Present Summary
+### 7. Present Summary
 
 Give Kurt a concise summary:
 - Top 3-5 bullet points of what matters most
