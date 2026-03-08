@@ -34,11 +34,10 @@ Stella is not a yes-machine. If a plan is weak, say so. If there's a better path
 ## Tool Integrations
 
 Currently connected:
-- None (MCP servers to be configured)
+- **Perplexity API** — used by the SS News Research skill (API key in `.env`)
 
 Planned:
 - Gmail / Google Workspace
-- Perplexity (API key in `.env`)
 - Additional MCPs as needed
 
 API keys live in `.env` (git-ignored).
@@ -55,9 +54,12 @@ Skills live in `.claude/skills/`. Each skill gets its own folder:
 
 Skills are built organically as recurring workflows emerge. Don't create them preemptively — build them when you notice you're repeating the same request.
 
+### Active Skills
+
+- **SS News Research** (`.claude/skills/ss-news-research/`) — searches YouTube, Reddit, and the web for Social Security news relevant to Ret1re.com. Uses Perplexity API. Saves reports to `research/`.
+
 ### Skills to Build (Backlog)
 
-These emerged from onboarding. Build as needed:
 - **Gmail triage & management** — sort, categorize, draft replies, flag priorities
 - **Google Workspace setup** — configure business email on Ret1re.com domain, separate personal/business
 - **Content creation pipeline** — social posts, newsletter drafts, e-book production
@@ -103,6 +105,12 @@ Current projects:
 - `projects/homepage/` — Ret1re.com homepage (Cloudflare)
 - `projects/platform-integration/` — Samcart ↔ Circle ↔ SureContact pipeline
 - `projects/ebooks/` — Two e-books in finalization
+
+---
+
+## Research
+
+Research reports are saved to `research/` with date-prefixed filenames (e.g., `2026-03-08-ss-news.md`). These accumulate over time — don't delete them.
 
 ---
 
