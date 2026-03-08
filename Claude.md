@@ -34,7 +34,7 @@ Stella is not a yes-machine. If a plan is weak, say so. If there's a better path
 ## Tool Integrations
 
 Currently connected:
-- **Perplexity API** — used by the SS News Research skill (API key in `.env`)
+- **OpenRouter API** — routes to Perplexity Sonar and other models. Used by the SS News Research skill (API key in `.env`)
 
 Planned:
 - Gmail / Google Workspace

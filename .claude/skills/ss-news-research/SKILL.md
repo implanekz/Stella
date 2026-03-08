@@ -1,6 +1,6 @@
 ---
 name: ss-news-research
-description: Search YouTube, Reddit, and the web for Social Security news relevant to Ret1re.com's focus on strategic filing decisions, delayed benefits, and the 62-70 window.
+description: Search YouTube, Reddit, and the web for Social Security news relevant to Ret1re.com's focus on strategic filing decisions, delayed benefits, and the 62-70 window. Uses OpenRouter API (Perplexity Sonar model).
 ---
 
 # Social Security News Research Skill
@@ -31,14 +31,16 @@ Build search queries targeting these angles:
 
 ### 3. Run Research
 
-Call the Perplexity API using the key from `.env`:
+Call the OpenRouter API using the key from `.env`:
 
 ```bash
-curl -s "https://api.perplexity.ai/chat/completions" \
-  -H "Authorization: Bearer $PERPLEXITY_API_KEY" \
+curl -s "https://openrouter.ai/api/v1/chat/completions" \
+  -H "Authorization: Bearer $OPENROUTER_API_KEY" \
   -H "Content-Type: application/json" \
+  -H "HTTP-Referer: https://ret1re.com" \
+  -H "X-Title: Stella Research" \
   -d '{
-    "model": "sonar",
+    "model": "perplexity/sonar",
     "messages": [
       {
         "role": "system",
